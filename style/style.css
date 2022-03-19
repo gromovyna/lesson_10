@@ -1,0 +1,73 @@
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main-ul{
+    margin:30px;
+    display: flex;
+}
+
+.item {
+    float: left;
+    position: relative;
+}
+
+.link:hover, .drop-link:hover, .sub-item:hover, .item:hover .link, .drop-li:hover .drop-link   {
+    background-color: rgba(165, 127, 255, 0.277);
+    color: rgb(212, 212, 31);
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.link, .drop-link, .sub-item {
+    background-color:navy;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.drop-link, .sub-item{
+    width: 192px;
+}
+
+.drop-list {
+    position: absolute;
+    display: none;
+}
+
+.item:hover .drop-list {
+    display: block;
+}
+
+
+.d {
+    position: relative;
+}
+
+.sub-ul {
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    position: absolute;
+    left: 192px;
+    top: 60px;
+    display: none;   
+}
+
+.drop-li:hover .sub-ul {
+    display: block;
+}
+
+
+
+
+
